@@ -1,0 +1,18 @@
+/* .navbar {
+    /* height: 50px; 
+    align-content: center;
+} */
+
+.insta-font {
+    font-family: "Billabong";
+}
+ 
+.header {
+    text-align: center;
+}
+
+#headerSearch {
+    position: relative;
+    top: 0px;
+    left: -150px;
+}
