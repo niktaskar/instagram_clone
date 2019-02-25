@@ -1,18 +1,66 @@
-/* .navbar {
-    /* height: 50px; 
-    align-content: center;
-} */
+@font-face {
+    font-family: "Billabong";
+    src: url("./Billabong.ttf");
+}
 
 .insta-font {
     font-family: "Billabong";
 }
  
-.header {
-    text-align: center;
+#navbarHeader {
+    display: flex;
+    overflow: scroll;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    margin-bottom: 20px;
 }
 
-#headerSearch {
-    position: relative;
-    top: 0px;
-    left: -150px;
+#navbarHeader.heading {
+    height: 30px;
+    text-align: center;
+    width: 20%;
+    margin: 10px;
+}
+
+#content{
+    display: flex;
+    display-direction: row;
+}
+.container {
+    /* overflow: scroll; */
+    /* background-color: blue; */
+    /* margin: 10px; */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#feed-content {
+    /* overflow: scroll; */
+    background-color: blue; 
+    width: 50%;
+    /* text-align: justify; */
+    margin: 10px;
+    /* flex-direction: column; */
+}
+
+#story-content {
+    /* overflow: scroll; */
+    background-color: green; 
+    width: 30%;
+    margin: 10px;
+    /* flex-direction: column; */
+}
+
+/* @media (max-width: 480px){
+    .container .feed {
+        width: 20%;
+        margin-left: 10px;
+    }
+} */
+
+#betterInstagram {
+    position: flex;
+    /* top: 0px;
+    left: -425px; */
 }
