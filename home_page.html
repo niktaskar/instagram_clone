@@ -16,24 +16,103 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-light" id="navbarHeader">
-        <i class="navbar navbar-brand fab fa-instagram heading"></i>
-        <a class="navbar navbar-brand insta-font heading" id="betterInstagram">Better Instagram</a>
-        <form class="nav-item heading">
-            <input type="search" placeholder="Search" id="headerSearch">
-        </form>
-    </nav>
-
-    <div class="contianer" id="content">
-
-        <div class="feed" id="feed-content">
-            <div class="post">post1</div>
-            <div class="post">post2</div>
-            <div class="post">post3</div>
-            <div class="post">post4</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar sticky-top bg-light container-fluid" id="navbarHeader">
+                <div class="navbar navbar-item col-3" id="nav-logo">
+                    <!-- <span class="row"> -->
+                    <i class="navbar navbar-brand fab fa-instagram" id="logo"></i>
+                    <div class="navbar navbar-brand" id="pipe">|</div>
+                    <a class="navbar navbar-brand insta-font heading" id="better-instagram">Better Instagram</a>
+                    <!-- </span> -->
+                </div>
+                <div class="navbar nav-item col-6" id="nav-search">
+                    <input class="nav-search" type="search" id="search-bar" placeholder="Search">
+                </div>
+                <div class="navbar nav-item col-3" id="nav-icons">
+                    <i class="far fa-compass icon" id="nav-compass-icon"></i>
+                    <i class="far fa-heart icon" id="nav-heart-icon"></i>
+                    <i class="far fa-user icon" id="nav-user-icon"></i>
+                    <!-- <img src="./explore.png" class="nav-item icon" id="nav-explore-icon"/> -->
+                    <!-- <img src="./like.png" class="nav-item icon" id="nav-like-icon"/> -->
+                    <!-- <a href="#">
+                        <span class="icon"></span>
+                    </a> -->
+                </div>
+            </div>
         </div>
-        <div class="feed" id="story-content">
-            <div class="story">story1</div>
+
+    </div>
+
+    <div class="container" id="content">
+
+        <div class="feed col-8" id="feed-content">
+            <div class="post"> You are given a graph G = (V, E) and you want to drive from a location s to another
+                location
+                t without running out of gas while spending as little money as possible. You are given a
+                map of the road system designated by a set of vertices and a set of directed roads (one way)
+                where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
+                of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
+                S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
+                c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
+                amount of gas you get, only on the gas station location. So you may as well fill up your tank
+                if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
+                an efficient algorithm to find the cheapest route from s to t such that you are never stranded
+                without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
+                the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
+            <div class="post"> You are given a graph G = (V, E) and you want to drive from a location s to another
+                location
+                t without running out of gas while spending as little money as possible. You are given a
+                map of the road system designated by a set of vertices and a set of directed roads (one way)
+                where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
+                of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
+                S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
+                c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
+                amount of gas you get, only on the gas station location. So you may as well fill up your tank
+                if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
+                an efficient algorithm to find the cheapest route from s to t such that you are never stranded
+                without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
+                the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
+            <div class="post"> You are given a graph G = (V, E) and you want to drive from a location s to another
+                location
+                t without running out of gas while spending as little money as possible. You are given a
+                map of the road system designated by a set of vertices and a set of directed roads (one way)
+                where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
+                of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
+                S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
+                c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
+                amount of gas you get, only on the gas station location. So you may as well fill up your tank
+                if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
+                an efficient algorithm to find the cheapest route from s to t such that you are never stranded
+                without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
+                the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
+            <div class="post"> You are given a graph G = (V, E) and you want to drive from a location s to another
+                location
+                t without running out of gas while spending as little money as possible. You are given a
+                map of the road system designated by a set of vertices and a set of directed roads (one way)
+                where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
+                of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
+                S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
+                c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
+                amount of gas you get, only on the gas station location. So you may as well fill up your tank
+                if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
+                an efficient algorithm to find the cheapest route from s to t such that you are never stranded
+                without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
+                the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
+        </div>
+        <div class="feed col-4" id="story-content">
+            <div class="story"> You are given a graph G = (V, E) and you want to drive from a location s to another location
+                    t without running out of gas while spending as little money as possible. You are given a
+                    map of the road system designated by a set of vertices and a set of directed roads (one way)
+                    where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
+                    of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
+                    S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
+                    c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
+                    amount of gas you get, only on the gas station location. So you may as well fill up your tank
+                    if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
+                    an efficient algorithm to find the cheapest route from s to t such that you are never stranded
+                    without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
+                    the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
             <div class="story">story2</div>
             <div class="story">story3</div>
             <div class="story">story4</div>
