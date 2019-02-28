@@ -1,7 +1,12 @@
+.body-content {
+    background-color: #f5f5f5;
+}
+
 .container-fluid {
-    border-bottom: 1px solid silver;
+    border-bottom: 0.5px solid silver;
     position: fixed;
     top: 0px;
+    z-index: 5;
 }
 
 @font-face {
@@ -14,74 +19,77 @@
 }
  
 #navbarHeader {
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     display: flex;
     overflow: scroll;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
 }
 
 #content{
     display: flex;
-    /* display-direction: row; */
-    overflow-x: hidden;
+    display-direction: row;
+    overflow-x: auto;
 }
 
 #content.container {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .container {
     overflow: scroll;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    padding-top: 10px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 2fr; */
 }
 
 #feed-content {
     position: static;
-    overflow: scroll;
+    overflow: hidden;
+    /* border: 0.5px solid silver; */
     /* background-color: blue;  */
-    width: 50%;
-    margin: 10px;
+    /* width: 50%; */
+    /* margin: 10px; */
 }
 
 #story-content {
     position: fixed;
-    height: 100px;
-    width: 30%;
+    height: 400px;
+    width: 400px;
     top: 80px;
     left: 955px;
     overflow: scroll;
     margin: 10px;
 }
 
-/* @media (max-width: 480px){
-    .container .feed {
-        width: 20%;
-        margin-left: 10px;
-    }
-} */
-
 #better-instagram {
-    position: relative;
-    top: 2px;
-    left: -20px;
+    position: absolute;
+    top: 7px;
+    left: 80px; 
+    width: 100px;
+    justify-content: lecontainer-fluidft;
 }
 
 #logo {
-    position: relative;
+    /* position: relative;
     top: -3px;
     left: 20px;
     height: 20px;
-    width: 20px;
+    width: 20px; */
+    padding-right: 5px;
+    border-right: 0.5px solid black;
+    justify-content: right;
+    width: 25px;
+    /* margin-right: 10px;
+    padding: 5px;
+    border-right: 1px solid black; */
 }
 
-#pipe {
+/* #pipe {
     position: relative;
     top: 0px;
     left: 12px;
-}
+} */
 
 .icon {
     margin-right: 30px;
@@ -106,19 +114,20 @@
 }
 
 #nav-search {
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 #nav-icons {
-    /* justify-content: left; */
+    justify-content: left;
 }
 
 #nav-logo {
-    /* align-content: right; */
+    justify-content: right;
+    margin-left: 125px;
 }
 
 @media only screen and (max-width: 1120px) {
-    #nav-icons {
+    #nav-search {
       visibility: hidden;
     }
 
@@ -126,20 +135,147 @@
         visibility: hidden;
     }
 
+    #content {
+        justify-content: center;
+    }
+
+    #navbarHeader {
+        /* justify-content: space-evenly; */
+    }
+
+    #nav-icons{
+        justify-content: center;
+    }
 }
 
 #search-bar {
-    background-color: lightgrey;
+    background-color: #f5f5f5;
+    background-image: url("search-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 45px 3px;
+    background-size: 5%;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 5px;
     height: 20px;
     width: 200px;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.7;
 }
 
 #search-bar:focus-within{
     background-color: none;
-    background-image: url("https://img.icons8.com/ios-glyphs/2/000000/search.png");
-    border-radius: 2px;
+    background-image: url("search-solid.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+    background-size: 5%;
+    border-radius: 5px;
     height: 20px;
     width: 200px;
+}
+
+#search-bar:focus-within::-webkit-input-placeholder{
+    visibility: hidden;
+}
+
+/* #navbarHeader #nav-search {
+    justify-content: center;
+} */
+
+
+.post {
+    height: 1015px;
+    width: 700px;
+    background-color: white;
+    margin-bottom: 30px;
+    border: 0.5px solid silver;
+}
+
+.post-user {
+    display: flex;
+}
+
+.post-pic > img{
+    top: 100px;
+    left: 0px;
+    height: 700px;
+    width: 698px;
+    /* margin-top: 75px; */
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.username {
+    color: black;
+    font-family: 'Montserrat';
+    /* font-display: bold; */
+    font-size: 16px;
+    /* position: relative; */
+    /* left: 50px; */
+    top: 25px;
+}
+
+.comment {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: black;
+}
+
+.comment .username {
+    margin-left: 5px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: black;
+}
+
+.comment-icon {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    position: relative;
+    left: 0px;
+}
+
+.comment-icon-right {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    position: relative;
+    left: 525px;
+}
+
+hr {
+    width: 600px;
+    stroke: 1px solid black;
+}
+
+.time-posted {
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    opacity: 0.7;
+    color: grey;
+}
+
+.add-comment {
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    opacity: 0.7;
+    color: grey;
+    top: -30px;
+}
+
+.ellipses {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    position: relative;
+    left: 500px;
 }
