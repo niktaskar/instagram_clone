@@ -20,7 +20,7 @@
     <div class="body-content">
         <div class="container-fluid">
             <div class="row">
-                <div class="navbar bg-white sticky-top container-fluid" id="navbarHeader">
+                <div class="navbar bg-white navbar-expand-lg sticky-top container-fluid" id="navbarHeader">
                     <div class="navbar navbar-item col-xs-3 col-sm-3 col-md-4 col-lg-3 " id="nav-logo">
                         <img src="instagram-brands.svg" id="logo">
                         <img src="name.jpeg" id="better-instagram">
@@ -38,7 +38,7 @@
         </div>
 
         <div class="container" id="content">
-            <div class="feed col-xs-12 col-lg-8" id="feed-content">
+            <div class="feed col-xs-12 col-lg-12" id="feed-content">
                 <div class="post" id="post1">
                     <div class="post-user">
                         <img src="theweeknd_profile.jpeg" class="profile">
@@ -49,24 +49,23 @@
                     </div>
                     <div class="comment-section">
                         <div class="container row">
-                            <img src="heart-regular.svg" class="comment-icon">
+                            <div class="comment-icon" id="heart"></div>
                             <img src="comment-regular.svg" class="comment-icon">
                             <img src="upload-regular.svg" class="comment-icon">
                             <img src="bookmark-regular.svg" class="comment-icon-right">
                         </div>
+                        <span class="likes"><strong>8,000,000,000 Likes</strong></span><br>
                         <span class="comment"><strong class="username">xxxTentacles</strong>&nbsp;&nbsp; Nice Hare
                             DOOD</span><br>
-                        <span class="comment"><strong class="username">littlePumpingLemma</strong>&nbsp;&nbsp;
-                            Esketit</span><br>
                         <span class="comment"><strong class="username">bellahadid</strong>&nbsp;&nbsp; <3 </span> <br>
-                        <span class="comment"><strong class="username">nikashtaskar</strong>&nbsp;&nbsp; I love
-                            your song: "Thank u, next"</span><br>
-                        <span class="time-posted">1 HOUR AGO</span>
-                        <hr>
-                        <!-- <div class="container row"> -->
-                            <span class="add-comment">Add a comment...</span>
-                            <img src="more-regular.svg" class="ellipses">
-                        <!-- </div> -->
+                                <span class="comment"><strong class="username">nikashtaskar</strong>&nbsp;&nbsp; I love
+                                    your song: "Thank u, next"</span><br>
+                                <span class="time-posted">1 HOUR AGO</span>
+                                <hr>
+                                <!-- <div class="container row"> -->
+                                <span class="add-comment">Add a comment...</span>
+                                <img src="more-regular.svg" class="ellipses">
+                                <!-- </div> -->
                     </div>
                 </div>
                 <div class="post" id="post2">
@@ -79,51 +78,126 @@
                     </div>
                     <div class="comment-section">
                         <div class="container row">
-                            <img src="heart-regular.svg" class="comment-icon">
+                            <div class="comment-icon" id="heart"></div>
                             <img src="comment-regular.svg" class="comment-icon">
                             <img src="upload-regular.svg" class="comment-icon">
                             <img src="bookmark-regular.svg" class="comment-icon-right">
                         </div>
+                        <span class="likes"><strong>8,000,000,001 Likes</strong></span><br>
                         <span class="comment"><strong class="username">ikatzman33</strong>&nbsp;&nbsp; Bruh u lük liek a
                             nijna turdle</span><br>
                         <span class="comment"><strong class="username">raheemsterling</strong>&nbsp;&nbsp; U run
                             funny</span><br>
-                        <span class="comment"><strong class="username">PaulPogba</strong>&nbsp;&nbsp; Pogboom, mon frere
-                        </span><br>
                         <span class="comment"><strong class="username">nikashtaskar</strong>&nbsp;&nbsp; Pace-y-est
                             player in the game</span><br>
                         <span class="time-posted">3 HOURS AGO</span>
                         <hr>
-                        <!-- <div class="container row"> -->
-                            <span class="add-comment">Add a comment...</span>
-                            <img src="more-regular.svg" class="ellipses">
-                        <!-- </div> -->
+                        <span class="add-comment">Add a comment...</span>
+                        <img src="more-regular.svg" class="ellipses">
                     </div>
                 </div>
             </div>
             <div class="feed col-xs-0 col-md-4 sticky-top" id="story-content">
-                <div>
-                    <div class="story" id="story1"> You are given a graph G = (V, E) and you want to drive from a
-                        location s
-                        to another
-                        location
-                        t without running out of gas while spending as little money as possible. You are given a
-                        map of the road system designated by a set of vertices and a set of directed roads (one way)
-                        where (u, v) ∈ E means that there is a road from vertex u to vertex v. w(u, v) is the length
-                        of the road from u to v, and it uses up w(u, v) gas units. You also know that some vertices
-                        S ⊆ V have gas stations. When you get to a vertex with a gas station, you can either pay
-                        c(u) dollars to fill up your tank, or not get gas. (Note that the cost does not depend on the
-                        amount of gas you get, only on the gas station location. So you may as well fill up your tank
-                        if you are getting any gas.) Assume that you start with a full tank with k units of gas. Give
-                        an efficient algorithm to find the cheapest route from s to t such that you are never stranded
-                        without gas. (It is ok to run out of gas at the same moment you reach a gas station.) Analyze
-                        the running time of your algorithm. Your analysis should be in terms of S, V and E.</div>
-                    <div class="story" id="story2">story2</div>
-                    <div class="story" id="story3">story3</div>
-                    <div class="story" id="story4">story4</div>
+                <div class="row" id="nikash-div">
+                    <img src="nikash_profile.jpg" class="profile">
+                    <strong class="username" id="nikash">nikashtaskar</strong>
+                    <div class="fullname">Nikash Taskar</div>
+                </div>
+                <div class="story-div">
+                    <span class="row">
+                        <span class="story-view" id="stories"><strong>Stories</strong></span>
+                        <span class="story-view" id="watch"><strong>Watch All</strong></span>
+                    </span>
+                    <div class="stories">
+                        <div class="story row" id="story1">
+                            <img src="lingard_profile.jpeg" class="profile">
+                            <strong class="story-username">user 1</strong>
+                            <span class="time-posted-story">1 HOUR AGO</span>
+                        </div>
+                        <div class="story row" id="story2">
+                            <img src="ye_profile.jpeg" class="profile">
+                            <strong class="story-username">user2</strong>
+                            <span class="time-posted-story">2 HOURS AGO</span>
+                        </div>
+                        <div class="story row" id="story3">
+                            <img src="tame_profile.jpeg" class="profile">
+                            <strong class="story-username">user3</strong>
+                            <span class="time-posted-story">3 HOURS AGO</span>
+                        </div>
+                        <div class="story row" id="story4">
+                            <img src="tekashi_profile.jpeg" class="profile">
+                            <strong class="story-username">user4</strong>
+                            <span class="time-posted-story">4 HOURS AGO</span>
+                        </div>
+                        <div class="story row" id="story5">
+                            <img src="melly_profile.jpeg" class="profile">
+                            <strong class="story-username">user5</strong>
+                            <span class="time-posted-story">5 HOURS AGO</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            <div class="feed col-xs-0 col-md-4 sticky-top" id="suggested-content">
+                <div class="suggested-div">
+                    <span class="row">
+                        <span class="story-view" id="stories"><strong>Suggestions for you</strong></span>
+                        <span class="story-view" id="watch2"><strong>See All</strong></span>
+                    </span>
+                    <div class="suggested">
+                        <div class="story row" id="story1">
+                            <img src="lingard_profile.jpeg" class="profile">
+                            <strong class="story-username">user 10</strong>
+                            <span class="time-posted-story">Followed by Frendo</span>
+                            <button type="button" class="button">Follow</button>
+                        </div>
+                        <div class="story row" id="story2">
+                            <img src="ye_profile.jpeg" class="profile">
+                            <strong class="story-username">user_11</strong>
+                            <span class="time-posted-story">Followed by Frendo</span>
+                            <button type="button" class="button">Follow</button>
+                        </div>
+                        <div class="story row" id="story3">
+                            <img src="tame_profile.jpeg" class="profile">
+                            <strong class="story-username">user 12</strong>
+                            <span class="time-posted-story">Followed by Frendo</span>
+                            <button type="button" class="button">Follow</button>
+                        </div>
+                        <div class="story row" id="story4">
+                            <img src="tekashi_profile.jpeg" class="profile">
+                            <strong class="story-username">user 13</strong>
+                            <span class="time-posted-story">Followed by Frendo</span>
+                            <button type="button" class="button">Follow</button>
+                        </div>
+                        <div class="story row" id="story5">
+                            <img src="melly_profile.jpeg" class="profile">
+                            <strong class="story-username">user 14</strong>
+                            <span class="time-posted-story">Followed by Frendo</span>
+                            <button type="button" class="button">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed col-xs-0 col-md-4 sticky-top" id="footnote-content">
+                <div class="row">
+                    <span href="#">&nbsp;About Us &nbsp;</span>&middot;
+                    <span href="#">&nbsp;Support&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Press&nbsp;</span>&middot;
+                    <span href="#">&nbsp;API&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Jobs&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Privacy&nbsp;</span>&middot;
+                </div>
+                <div class="row">
+                    <span href="#">&nbsp;Terms&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Directory&nbsp;/span>&middot;
+                    <span href="#">&nbsp;Profiles&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Hashtags&nbsp;</span>&middot;
+                    <span href="#">&nbsp;Language&nbsp;</span>&middot;
+                </div>
+                <br>
+                <div>
+                    <span href="#">&copy 2019 INSTAGRAM</span>&middot;
+                </div>
+            </div>
         </div>
     </div>
 </body>
